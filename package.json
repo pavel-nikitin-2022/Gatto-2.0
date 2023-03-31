@@ -1,0 +1,20 @@
+{
+  "name": "gatto",
+  "version": "1.0.0",
+  "description": "Миниапп, совмещающий тамагочи с метавселенными.",
+  "main": "index.js",
+  "repository": "https://github.com/pavel-nikitin-2022/Gatto-2.0.git",
+  "author": "pavel-nikitin-2022 <90633463+pavel-nikitin-2022@users.noreply.github.com>",
+  "license": "MIT",
+
+  "scripts": {
+    "backend": "yarn workspace backend",
+    "frontend": "yarn workspace frontend",
+    "shared": "yarn workspace shared"
+  },
+
+  "private": true,
+  "workspaces": [
+    "packages/*"
+  ]
+}
