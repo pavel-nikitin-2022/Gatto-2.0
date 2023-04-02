@@ -6,15 +6,20 @@
   "repository": "https://github.com/pavel-nikitin-2022/Gatto-2.0.git",
   "author": "pavel-nikitin-2022 <90633463+pavel-nikitin-2022@users.noreply.github.com>",
   "license": "MIT",
-
   "scripts": {
     "backend": "yarn workspace backend",
     "frontend": "yarn workspace frontend",
-    "shared": "yarn workspace shared"
+    "shared": "yarn workspace shared",
+    "post-merge": "sh .husky/post-merge",
+    "prepare": "husky install",
+    "lint": "npm run lint --workspaces --if-present",
+    "lint:fix": "npm run lint:fix --workspaces --if-present"
   },
-
   "private": true,
   "workspaces": [
     "packages/*"
-  ]
+  ],
+  "devDependencies": {
+    "husky": "^8.0.0"
+  }
 }
